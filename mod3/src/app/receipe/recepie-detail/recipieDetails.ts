@@ -1,4 +1,4 @@
-export class recipieDetail{
+export class recipieDetails{
     public img:any;
     public name:any
     public descriptions:any

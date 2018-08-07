@@ -1,1 +1,33 @@
 
+<div class="form-group">
+  <img [src]="recipie.img" class="rounded-circle" alt="Cinque Terre">
+</div>
+<div class="form-group">
+  <label for="pwd">{{recipie.name}}</label>
+</div>
+<div class="form-group">
+  <label for="pwd">{{recipie.descriptions}}</label>
+</div>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Manage Recipe
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Edit</a>
+    <a class="dropdown-item" href="#">Delete</a>
+  </div>
+</div>
+
+
+<div class="form-group form-check">
+    <label class="form-check-label" >
+     
+     <h3>Ingridients</h3>
+    </label>
+  </div>
+
+<div class="form-group form-check" *ngFor="let ing of recipie.ingredients">
+  <label class="form-check-label" >
+    {{ing}}
+  </label>
+</div>
