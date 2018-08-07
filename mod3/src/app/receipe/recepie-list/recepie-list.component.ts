@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipie } from './recepie-item/Recipie';
 
 @Component({
   selector: 'app-recepie-list',
@@ -6,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recepie-list.component.css']
 })
 export class RecepieListComponent implements OnInit {
+  recipies:Recipie[]=[
+    new Recipie("Vada pav","bun and fried paties","/assets/vadapav.jpg"),
+    new Recipie("Vada pav","bun and fried paties","/assets/vadapav.jpg"),
+    new Recipie("Vada pav","bun and fried paties","/assets/vadapav.jpg")
 
+  ];
   constructor() { }
 
   ngOnInit() {
